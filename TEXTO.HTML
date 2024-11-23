@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundo com Corações Espalhados</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      position: relative;
+      height: 100vh;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    /* Estilo para o texto centralizado */
+    .content {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      position: relative;
+    }
+
+    .content h1 {
+      font-size: 32px;
+      color: #d32f2f;
+    }
+
+    .content p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Corações espalhados pela tela */
+    .heart {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      transform: rotate(45deg);
+      /* Criando o formato de coração com bordas arredondadas */
+      border-radius: 10%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: move 10s linear infinite;
+    }
+
+    .heart:before, .heart:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .heart:before {
+      left: 0;
+      top: -25px;
+    }
+
+    .heart:after {
+      top: 0;
+      left: -25px;
+    }
+    .heart-button {
+      margin-left: 885px;
+      margin-top: 20px;
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .heart-button:hover {
+      background-color: darkred;
+    }
+    #texto{
+        text-decoration: none;
+    }
+
+    /* Animação para movimento aleatório */
+    @keyframes move {
+      0% {
+        transform: translate(0, 0) rotate(45deg);
+      }
+      100% {
+        transform: translate(calc(100vw - 50px), calc(100vh - 50px)) rotate(45deg);
+      }
+    }
+
+    /* Geração de múltiplos corações no fundo */
+    .heart:nth-child(1) { top: 10%; left: 20%; animation-duration: 12s; }
+    .heart:nth-child(2) { top: 30%; left: 50%; animation-duration: 15s; }
+    .heart:nth-child(3) { top: 50%; left: 80%; animation-duration: 18s; }
+    .heart:nth-child(4) { top: 60%; left: 30%; animation-duration: 20s; }
+    .heart:nth-child(5) { top: 80%; left: 70%; animation-duration: 22s; }
+    .heart:nth-child(6) { top: 40%; left: 10%; animation-duration: 24s; }
+    .heart:nth-child(7) { top: 20%; left: 60%; animation-duration: 26s; }
+    .heart:nth-child(8) { top: 70%; left: 40%; animation-duration: 28s; }
+    .heart:nth-child(9) { top: 50%; left: 20%; animation-duration: 30s; }
+    .heart:nth-child(10) { top: 90%; left: 10%; animation-duration: 32s; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Corações espalhados -->
+  <div class="heart" style="top: 10%; left: 10%;"></div>
+  <div class="heart" style="top: 25%; left: 35%;"></div>
+  <div class="heart" style="top: 60%; left: 60%;"></div>
+  <div class="heart" style="top: 40%; left: 80%;"></div>
+  <div class="heart" style="top: 75%; left: 25%;"></div>
+  <div class="heart" style="top: 80%; left: 50%;"></div>
+  <div class="heart" style="top: 15%; left: 75%;"></div>
+  <div class="heart" style="top: 55%; left: 20%;"></div>
+  <div class="heart" style="top: 65%; left: 80%;"></div>
+  <div class="heart" style="top: 30%; left: 50%;"></div>
+
+  <!-- Texto centralizado -->
+  <div class="content">
+    <h1>Amor 1 ano</h1>
+    <p>Bom, um ano ao seu lado. Há um ano escolhi você para minha vida, para ser minha esposa e a mamãe dos meus filhos, uhum!<br>
+      Foi a melhor escolha que já fiz. Só tenho a agradecer a você por me ajudar em cada momento.<br> Esses momentos difíceis que tivemos, só consegui superar porque você estava ao meu lado.<br>
+      Eu amo você a cada segundo e, cada vez mais, parece que meu amor só aumenta.<br> Sinceramente, pensei que nunca choraria por amor, mas por você eu chorei.<br> E, naquele momento, percebi que realmente amo você, que não é só um amor de momento, sabe?<br> É porque eu realmente amo você de alma.<br>
+      Pensei que o amor nunca existiu. Esse amor de verdade, de amar alguém como eu amo você.<br> Para mim, alma gêmea não existia, mas, quando conheci você, tudo mudou.<br>  Passei a acreditar mais no amor.<br> Meu amor por você, nesses meses, nunca demorou, só aumentou cada vez mais.<br>
+      Você me mostrou que o amor não é só sobre grandes declarações, mas sobre os pequenos momentos,<br> como o simples fato de estarmos juntos, apoiarmos um ao outro e crescermos lado a lado.<br>
+      Um ano se passou e, a cada dia, você me surpreende, me faz sorrir e me enche de uma felicidade que eu nunca imaginei ser possível. <br>Eu amo a confiança de que temos uma na outra. Amo você de todas as formas, de todas as maneiras.<br>
+      Eu quero ter meu futuro com vocês, nossos filhos, nossos cachorros e conquistar minhas coisas ao seu lado.<br> Não sou muito paciente para fazer essas coisas à mão e nem tenho dom para isso, mas juro que tentei.<br>
+      Eu sou romântico do meu jeito e demonstro de outras maneiras o quanto amo você. Espero que veja isso.<br> Eu amo muito, muito, muito você, meu amor. Nunca duvide disso, ok?
+       💖</p>
+  </div>
+  <a id="texto" href="flor.html"><button class="heart-button">❤️</button></a>
+
+</body>
+</html>

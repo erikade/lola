@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotos Polaroid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #ffe5ec;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .polaroid {
+      width: 150px;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .polaroid p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .polaroid:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .heart-button {
+      margin-top: 20px;
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .heart-button:hover {
+      background-color: darkred;
+      transform: scale(1.1);
+    }
+
+    .button-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+    #texto{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="fotos">Alguns dos nossos momentos</h1>
+    <div class="grid">
+  
+
+        <div class="polaroid">
+          <img src="1.png" alt="Foto 1">
+          
+        </div>
+
+        <div class="polaroid">
+          <img src="2.png" alt="Foto 2">
+    
+        </div>
+
+        <div class="polaroid">
+          <img src="3.png" alt="Foto 3">
+         
+        </div>
+
+        <div class="polaroid">
+            <img src="4.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="5.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="6.png" alt="Foto 3">
+           
+          </div>
+
+          <div class="polaroid">
+            <img src="7.png" alt="Foto 3">
+          
+          </div>
+
+          <div class="polaroid">
+            <img src="8.png" alt="Foto 3">
+        
+          </div>
+
+          <div class="polaroid">
+            <img src="9.png" alt="Foto 3">
+            
+          </div>
+
+          <div class="polaroid">
+            <img src="10.png" alt="Foto 3">
+           
+          </div>
+
+          <div class="polaroid">
+            <img src="11.png" alt="Foto 3">
+           
+          </div>
+
+          <div class="polaroid">
+            <img src="12.png" alt="Foto 3">
+           
+          </div>
+
+          <div class="polaroid">
+            <img src="13.png" alt="Foto 3">
+            </div>
+          <div class="polaroid">
+            <img src="14.png" alt="Foto 3">
+          
+          </div>
+          <div class="polaroid">
+            <img src="15.png" alt="Foto 3">
+           
+          </div>
+          <div class="polaroid">
+            <img src="16.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="17.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="18.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="19.png" alt="Foto 3">
+            
+          </div>
+          <div class="polaroid">
+            <img src="20.png" alt="Foto 3">
+            
+          </div>
+    </div>
+    
+
+  <div class="button-container">
+    <a id="texto" href="TEXTO.HTML">
+      <button class="heart-button">❤️</button>
+    </a>
+  </div>
+</body>
+</html>
